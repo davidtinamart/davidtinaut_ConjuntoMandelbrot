@@ -14,7 +14,7 @@ public class Lanzador {
             JSpinner spinner = new JSpinner(new SpinnerNumberModel(THREAD_POOL_SIZE, 1, 8, 1));
             spinner.addChangeListener(e -> {
                 int numeroHilos = (int) spinner.getValue();
-                renderer.setNumThreads(numeroHilos);
+                renderer.setNumeroDeHilos(numeroHilos);
                 renderer.pintaMandelbrot();
             });
 

@@ -18,31 +18,31 @@ public class RenderizadorMandelbrot extends JPanel {
 
         public RenderizadorMandelbrot() { // Constructor de la clase RenderizadorMandelbrot
             setPreferredSize(new Dimension(ANCHO, ALTO));
-            initializeImage();
-            createExecutor();
+            inicializarImagen();
+            crearExecutor();
         }
 
-        private void initializeImage() { // Crea una imagen de tipo BufferedImage con las dimensiones indicadas en el constructor de la clase BufferedImage (en este caso 800x600)
-            imagen = new BufferedImage(ANCHO, ANCHO, BufferedImage.TYPE_INT_RGB);
+        private void inicializarImagen() { // Crea una imagen de tipo BufferedImage con las dimensiones indicadas en el constructor de la clase BufferedImage (en este caso 800x600)
+            imagen = new BufferedImage(ANCHO, ALTO, BufferedImage.TYPE_INT_RGB);
         }
 
-        private void createExecutor() { // Crea un pool de hilos con el numero de hilos que se le indique en el constructor de la clase ExecutorService (en este caso 4)
+        private void crearExecutor() { // Crea un pool de hilos con el numero de hilos que se le indique en el constructor de la clase ExecutorService (en este caso 4)
             executor = Executors.newFixedThreadPool(numeroHilos);
         }
 
-        public void setNumThreads(int numHilos) { // Cambia el numero de hilos del pool de hilos creado en el metodo createExecutor() y vuelve a crear el pool de hilos con el nuevo numero de hilos
+        public void setNumeroDeHilos(int numHilos) { // Cambia el numero de hilos del pool de hilos creado en el metodo createExecutor() y vuelve a crear el pool de hilos con el nuevo numero de hilos
             this.numeroHilos = numHilos;
             executor.shutdown();
-            createExecutor();
+            crearExecutor();
             repaint();
         }
 
         public void pintaMandelbrot() { // Crea un hilo por cada hilo del pool de hilos creado en el metodo createExecutor() y le pasa como parametro el
             // numero de hilo, el numero de hilo + 1, la imagen, el ancho, el alto y el numero maximo de iteracciones que se le pasa como parametro en el constructor de la clase TrabajadorMandelbrot (en este caso 1000)
             for (int i = 0; i < numeroHilos; i++) {
-                int startY = i * (HEIGHT / numeroHilos);
-                int endY = (i + 1) * (HEIGHT / numeroHilos);
-                executor.execute(new TrabajadorMandelbrot(startY, endY, imagen, WIDTH, HEIGHT, MAXIMO_ITERACCIONES));
+                int startY = i * (ALTO / numeroHilos);
+                int endY = (i + 1) * (ALTO / numeroHilos);
+                executor.execute(new TrabajadorMandelbrot(startY, endY, imagen, ANCHO, ALTO, MAXIMO_ITERACCIONES));
             }
         }
 

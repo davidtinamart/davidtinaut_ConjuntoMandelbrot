@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eab0b8ad-ed84-4128-b376-76cba52f2caa" name="Changes" comment="Commit 3: Clase TrabajadorMandelbrot.java" />
+    <list default="true" id="eab0b8ad-ed84-4128-b376-76cba52f2caa" name="Changes" comment="Commit 5: Clase Lanzador.java">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Lanzador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lanzador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RenderizadorMandelbrot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RenderizadorMandelbrot.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +24,23 @@
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "davidtinamart"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="071d9edb-e22b-4761-8be9-c07833a354e3" />
+        <option name="url" value="https://github.com/davidtinamart/davidtinaut_ConjuntoMandelbrot.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -59,7 +80,7 @@
       <workItem from="1697194205355" duration="51000" />
       <workItem from="1697194282764" duration="163000" />
       <workItem from="1697194455183" duration="35000" />
-      <workItem from="1697194585776" duration="1154000" />
+      <workItem from="1697194585776" duration="3514000" />
     </task>
     <task id="LOCAL-00001" summary="Commit 3: Clase TrabajadorMandelbrot.java">
       <option name="closed" value="true" />
@@ -69,7 +90,23 @@
       <option name="project" value="LOCAL" />
       <updated>1697195702656</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Commit 4: Clase RenderizadorMandelbrot.java">
+      <option name="closed" value="true" />
+      <created>1697196734028</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1697196734028</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Commit 5: Clase Lanzador.java">
+      <option name="closed" value="true" />
+      <created>1697197954386</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1697197954386</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -77,6 +114,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit 3: Clase TrabajadorMandelbrot.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit 3: Clase TrabajadorMandelbrot.java" />
+    <MESSAGE value="Commit 4: Clase RenderizadorMandelbrot.java" />
+    <MESSAGE value="Commit 5: Clase Lanzador.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit 5: Clase Lanzador.java" />
   </component>
 </project>
