@@ -1,0 +1,37 @@
+@startuml
+
+!theme plain
+top to bottom direction
+skinparam linetype ortho
+
+class Lanzador {
+  - THREAD_POOL_SIZE: int
+  + main(String[]): void
+}
+class RenderizadorMandelbrot {
+  - MAXIMO_ITERACCIONES: int
+  - TAMANO_POOL: int
+  - executor: ExecutorService
+  - imagen: BufferedImage
+  - ANCHO: int
+  - ALTO: int
+  - numeroHilos: int
+  - crearExecutor(): void
+  - inicializarImagen(): void
+  + setNumeroDeHilos(int): void
+  # paintComponent(Graphics): void
+  + pintaMandelbrot(): void
+}
+class TrabajadorMandelbrot {
+  - endY: int
+  - imagen: BufferedImage
+  - ALTO: int
+  - MAX_ITER: int
+  - startY: int
+  - ANCHO: int
+  + run(): void
+}
+
+Lanzador                -[#595959,dashed]->  RenderizadorMandelbrot : "«create»"
+RenderizadorMandelbrot  -[#595959,dashed]->  TrabajadorMandelbrot   : "«create»"
+@enduml
